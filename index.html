@@ -40,10 +40,14 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!--contact form css-->
+    <link rel="stylesheet" href="css/contact-form/pure.css">
+    <link rel="stylesheet" href="css/contact-form/style.css">
+
     <!-- Start of Async Live chat Drift Code -->
     <!-- https://start.drift.com/login -->
     <!--Start of Tawk.to Script-->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
         (function () {
             var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
@@ -53,7 +57,7 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
-    </script> -->
+    </script>
     <!--End of Tawk.to Script-->
     <!-- End of Async Drift Code -->
 
@@ -756,38 +760,196 @@
     <!--portfolio Ends-->
 
     <!--contact-->
-    <section class="message">
-        <div class="mid">
-            <h1>GET IN TOUCH</h1>
-            <hr>
-            <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
-            <div class="input">
-                <form action="">
-                    <input type="text" placeholder="Your Name">
-                    <input type="text" placeholder="Your Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <div class="submit">
-                        <input type="submit" value="SEND MESSAGE">
+    <section id="contact">
+        <div class="container-box-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="horizontal-heading text-center wow slideInLeft" data-wow-duration="1s">
+                            <h1>Contact Me</h1>
+                        </div>
                     </div>
-                </form>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <!--contact left-->
+                        <div id="contact-left">
+
+                            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+                                action="https://script.google.com/macros/s/AKfycbxcWZhqziguyLIU_Wzmh-e5V4-U81DLkzAYdzYa5A/exec">
+                                <!-- change the form action to your script url -->
+
+                                <h4>Send Message</h4>
+                                <p>I may answer your all question </p>
+
+
+                                <div class="form-elements">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset class="pure-group">
+                                                <input id="name" name="name" placeholder="Your Name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset class="pure-group">
+                                                <input id="email" name="email" type="email" value="" required
+                                                    placeholder="Email Address" />
+                                                <span class="email-invalid" style="display:none">
+                                                    Must be a valid email address</span>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset class="pure-group">
+                                                <input id="subject" name="subject" placeholder="Your mail Subject">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset class="pure-group">
+                                                <input id="phone" name="phone" placeholder="Phone Number">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <fieldset class="pure-group">
+                                        <textarea id="message" name="message" rows="5"
+                                            placeholder="Write Your Message Here..."></textarea>
+                                    </fieldset>
+
+                                    <button>
+                                        submit
+                                    </button>
+
+                                </div>
+
+                                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                                <div class="thankyou_message" style="display:none;">
+                                    <br>
+                                    <br>
+                                    <h3>
+                                        <span class="alrt-msg1">
+                                            Thank You!!!
+                                        </span>
+                                        <br>
+                                        <span class="alrt-msg2">
+                                            For connect with me..
+                                            <br>
+                                            I will back to you soon!
+                                        </span>
+                                    </h3>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!--contact right-->
+                        <div id="contact-right">
+                            <div class="vertical-heading text-center">
+                                <h3>GET In Touch</h3>
+                            </div>
+                            <!--address-->
+                            <div class="contact-details">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-sm-10">
+                                        <h4>Address</h4>
+                                        <a href="https://goo.gl/maps/teoYeFG32szkL8ee8"
+                                            style="text-decoration: none; cursor:pointer;">Nikunja-2, Dhaka,
+                                            Bangladesh</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--email-->
+                            <div class="contact-details">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-sm-10">
+                                        <h4>Email</h4>
+                                        <a href="mailto:joyonto.karmakar.cse@gmail.com"
+                                            style="text-decoration:none; cursor:pointer;">joyonto.karmakar.cse@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--phone-->
+                            <div class="contact-details">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="icon">
+                                            <i class="fa fa-mobile"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-sm-10">
+                                        <h4>Phone</h4>
+                                        <a class="mobilesOnly" href="tel:+880 1727244864"
+                                            style="text-decoration:none; cursor:pointer;">+880 1727244864</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="social-list">
+                                <li><a target="_blank" href="https://www.facebook.com/joyontostd"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+
+                                <li><a target="_blank" href="https://www.linkedin.com/in/joyontokarmakar"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+
+                                <li><a target="_blank" href="https://www.github.com/Joyontokarmakar"><i
+                                            class="fab fa-github"></i></a></li>
+
+                                <li><a target="_blank" href="https://www.instagram.com/joyontokarmaker/"><i
+                                            class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!--contact Ends-->
 
-    <!-- Footer area start here -->
-    <footer class="footer">
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Google+</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">Dribbble</a></li>
-            <li><a href="#">GitHub</a></li>
-        </ul>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- hitwebcounter Code START -->
+                    <a href="https://www.hitwebcounter.com" target="_blank"
+                        style="position: absolute; right: 0%; top: 0%; color: #f4c613 !important;">
+                        <img src="https://hitwebcounter.com/counter/counter.php?page=7651711&style=0006&nbdigits=4&type=page&initCount=0"
+                            title="Free Stats for webpages" Alt="hitwebcounter" border="1">
+                    </a>
+                    <p class="text-center">
+                        Copyright &copy; All Rights Reserved By <span>Joyonto Karmakar &#9679; 2020</span>
+                    </p>
+
+                    <!--
+                    <p class="text-center">
+                        Copyright &copy; All Rights Reserved By <span>Joyonto Karmakar &#9679; <script>document.write(new Date().getFullYear())</script></span>
+                    </p>
+-->
+
+                </div>
+            </div>
+        </div>
+
+        <!--back to top-->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-service btn-back-to-top smooth-scroll" title="home"
+            role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
     </footer>
-    <!-- Footer area end here -->
+    <!--footer Ends-->
 
     <!--jquery-->
     <script src="js/jquery.min.js"></script>
