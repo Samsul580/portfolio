@@ -491,10 +491,14 @@ ul.navbar-nav > li > a:focus {
 /*==================================
             skill
 ====================================*/
+#skill {
+    background-color: #d74680;
+}
 .skills {
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
+    
 }
 
 .skill-name {
@@ -547,170 +551,57 @@ ul.navbar-nav > li > a:focus {
 
 /* portfolio */
 
-#portfolio h1::after {
-    content: "";
-    display: block;
-    height: .2rem;
-    width: 5.5rem;
-    margin: auto;
-    background: #F4C613;
-}
-
-#portfolio {
-    padding-bottom: 0px;
-}
-
-#portfolio .vertical-heading {
-    margin-bottom: 50px;
-}
-
-.row.no-gap [class*=col-] {
-    padding: 0;
-
-}
-
-.portfolio-item {
-    overflow: hidden;
-    position: relative;
-}
-
-#isotope-filter {
-    margin: 20px 0;
+#project {
+    padding: 100px;
+    background-color: #e7f1f8;
     text-align: center;
 }
-
-#isotope-filter button {
-    text-transform: uppercase;
-    background: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    padding-right: 25px;
-    outline: 0;
-
+.project-area {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    text-align: center;
 }
-
-#isotope-filter button span {
-    display: block;
-    padding-bottom: 5px;
-    -webkit-transition: border-color .4s ease-in-out;
-    transition: border-color .4s ease-in-out;
+@media only screen and (max-width: 600px) {
+    .project-area {
+        display: block;
+        margin: 20px
+    }
+  }
+  .project-box {
+    padding: 10px;
+    border-radius: 10px;
 }
-
-#isotope-filter button.active span {
-    color: #f4c613;
-    border-bottom: 2px solid #f4c613;
-
-}
-
-.portfolio-item img {
-    width: 500px;
-    height: 300px;
-    border: 7px solid #ddd;
-    border-right: 23px solid #ddd;
-    margin: 15px;
-    -webkit-transition:
-        -webkit-transform .9s ease;
-    transition:
-        -webkit-transform .9s ease;
-    transition: transform .9s ease;
-    transition: transform .9s ease,
-        -webkit-transform .9s ease;
-}
-
-.portfolio-item:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    overflow: hidden;
-}
-
-.portfolio-item-overlay {
-    position: absolute;
-    top: 7px;
-    bottom: 7px;
-    left: 7px;
-    right: 0;
-    background: rgb(14, 14, 17, 0.9);
-    /*background: rgb(244, 199, 44);*/
-    /*cursor: -webkit-zoom-in;
-    cursor: zoom-in;*/
-    opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.portfolio-item-details {
-    position: absolute;
+.project-box img {
     width: 100%;
-    top: 50%;
-    left: 0;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    height: 200px
+}
+.card-body {
+    background-color: #f4c613;
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link a {
+    text-decoration: none;
+    color: black;
 }
 
-.portfolio-item-details h3 {
+.card{
+    transition: 0.5s
+}
+.card:hover{
+    background: #0cff65;
+    border: 2px solid #0cff65;
+    transform: translateY(-20px);
     color: #fff;
-    text-transform: uppercase;
-    font-size: 25px;
-    padding: 0;
-    margin: 0;
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
 }
-
-.portfolio-item-details span {
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
-    margin: -1px auto 5px auto;
-    -webkit-animation: rotation 2s infinite linear;
+.card:hover .card-body {
+    background-color: #000;
 }
-
-@-webkit-keyframes rotation {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-
-    to {
-        -webkit-transform: rotate(359deg);
-    }
-}
-
-.portfolio-item-details p {
-    font-size: 15px;
-    text-transform: uppercase;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-/*overlay show in mouse hover*/
-
-.portfolio-item:hover .portfolio-item-details h3 {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.portfolio-item:hover .portfolio-item-details p {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.portfolio-item:hover .portfolio-item-overlay {
-    opacity: 1;
-}
-
-
-
 /*   Social Icons */
 
 ul.social-list {
